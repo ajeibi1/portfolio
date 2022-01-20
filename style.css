@@ -1,0 +1,367 @@
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 1;
+    padding: 1;
+    position: relative;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    position: relative;
+    font-family: 'poppins' sans-serif;
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+body{
+    background: linear-gradient(to left,#e9e1e1,#b7cfbc);
+    overflow: scroll;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    
+}
+.container{
+    position: relative;
+    box-shadow:2px 2px 5px #babecc,-5px -5px 10px #ffffff73;
+    background-color: gold;
+    z-index: 1;
+    opacity: 0.8;
+    width: 100%;
+    display:grid;
+
+    
+}
+.navBar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    overflow: hidden;
+}
+.navBar .logo{
+    position: relative;
+}
+.navBar .logo a{
+    position: relative;
+    display: inline-block;
+    margin: 8px;
+    padding: 8px;
+    color: blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    box-shadow:inset 5px 5px 10px,5px 5px 10px #babecc,-5px -4px 8px #ffffff73;
+    
+
+}
+.navBar .navItems{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.navBar .navItems li{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+}
+.navBar .navItems li a{
+    position: relative;
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    margin: 8px;
+    padding: 8px;
+    color: #1205c4;
+    font-weight: 600;
+    flex: 1;
+}
+.hr{
+    width: 100%;
+    height: 2px;
+    background: #5f3a37;
+}
+.content h1{
+    color:#5f3a37 ;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.content-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 32px;
+
+}
+.content-box .content{
+    position: relative;
+
+}
+.content-text{
+    margin: 5px;
+    padding: 5px;
+    text-indent: 5px;
+    border-left: rgba(0,0,0,.5)solid;
+    font-style: normal;
+    font-weight: 700;
+    color: #5f3a37;
+    z-index: 1;
+    
+}
+.content-text::first-letter{
+    font-size: 2.5rem;
+        
+    }
+
+li{
+    list-style-type: square;
+    letter-spacing: 5px;
+    line-height: 25px;
+    font-style: bold;
+    font: 2rems;
+}
+h3{
+    padding-top: 5px;
+}
+em{
+    background: linear-gradient(to right,#a279d5,#c5a6e1);
+    color: #a279d5;
+}
+.picture img{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 50px;
+    justify-items: center;
+
+}
+.picture{
+    box-sizing: content-box;
+    justify-content: center;
+    padding-left: 40%;
+}
+.content-box .content .tittle{
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:rgba(106,90,205,.9);
+    display: flex;
+
+    
+}
+.content-box.content.content-text{
+    position: relative;
+    line-height: 40px;
+    width: 500px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+.content-box .content .shopBtn{
+    position: relative;
+    padding: 16px 48px;
+    display: grid;
+    box-sizing: content-box;
+    float: right; 
+    justify-content: center;
+    border-radius: 50px;
+    background: linear-gradient(to right,#a279d5,#c5a6e1);
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 15px 20px -7px rgba(0,0,0,.5);
+    transition: box-shadow 300ms top 500ms;
+}
+.content-box .content .shopBtn:hover{
+    top: 3px;
+    box-shadow: 0 5px 20px -2px rgba(0,0,0,.5);
+}
+/*
+footer style
+*/
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer{
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+    list-style-type: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.ft-tittle {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+body {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+
+}
+hr{
+    height: 10px;
+    color: white;
+}
+
+.containner {
+    flex: 1;
+
+}
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem; /*200px*/
+}
+
+ @media only screen and (min-width:29.8125rem){
+ .ft-main{
+    justify-content: space-around;
+
+ }
+}
+@media only screen and (min-width:7712.5rem){
+    .ft-main{
+        justify-content: space-evenly;
+    }
+}
+
+
+@media only screen and (max-width:750px){
+    .navBar .navItems li a{
+       justify-content: center;
+       position: relative;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+       width: 100%;
+    }
+    .navBar .navItems{
+        display: grid;
+        padding: 0;
+        margin: 0;
+    }
+    .navBar .logo a{
+        margin-left:0px;
+        margin-top: auto;
+    }
+    .container{
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+input [type="email"] {
+    border: 0;
+    padding: 00.625rem;
+    margin-top: 0.3125rem;
+    border-radius: 10px;
+
+}
+
+input [type="submit"]{
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+
+     /*
+     line up social
+     */
+
+ .ft-social {
+    padding: 01.775rem 1.2rem;
+
+}
+
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.2rem;
+}
+
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/*
+line up the legal footer
+*/
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.ft-legal-list li {
+    margin: 0.8125rem 0.625rem;
+    white-space: nowrap;
+
+}
+
+/*
+one befoer the last child.
+*/
+
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+.wraper{
+    
+    box-shadow:  rgba(223, 231, 231, 0.945);
+    z-index: 1;
+}
+.picture {
+    color: #555;
+}     
+
+     
+
+
